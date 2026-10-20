@@ -1,0 +1,45 @@
+*{
+    background-color:rgb(14, 14, 53);
+    color: rgb(255, 255, 255);
+}
+
+.titre{
+    font-size:40px;
+    color: red;
+}
+
+.span1{
+    color: green;
+}
+
+.span2{
+    color: rgb(238, 238, 7);
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow:0px 0px 10px 0px blue ;
+}
+
+ul{
+    display: flex;
+    margin-top: 3rem;
+}
+li{
+    list-style:none;
+    margin-left: 6rem;
+}
+a{
+  text-decoration: none;
+  font-family: 'algerian';
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}    
+
+
+    
