@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porfolio</title>
-  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script> -->
+  <title>Porfolio</title>.
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>-->
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+0
 
 <body>
   <header>
@@ -18,11 +22,10 @@
       </div>
       <div>
         <ul>
-          <li><a href="">Acceuil</a></li>
-          <li><a href="">competences</a></li>
-          <li><a href="">Projets</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">A propos</a></li>
+          <li><a href="#hero">Acceuil</a></li>
+          <li><a href="#competences">competences</a></li>
+          <li><a href="#Projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
       </div>
@@ -30,27 +33,227 @@
   </header>
   <main>
     <!--hero section-->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div style="width: 400px;">
         <h1>
-          bonjour,je suis developpeur
-          d'appli web et mobile
+          Bonjour,je suis <span style="color: blue;"> developpeur
+            d'appli web </span> et mobile
+
         </h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi distinctio molestiae obcaecati commodi,
+        <p style="margin-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi distinctio
+          molestiae obcaecati commodi,
           quidem excepturi incidunt itaque corporis labore animi debitis repellat nostrum aspernatur, repellendus
           veritatis repudiandae sed mollitia culpa.</p>
-        <a href="" class="btn">contacter moi</a>
+        <a href="" class="btn" style="margin-top: 10px;">contacter moi</a>
 
       </div>
       <!--image-->
-      <div style="width: 400px;">
-          <div>
-            <img src="../assets/image/logo developpeur.jpg" alt="logo" style="height: 300px;width: 300px;">
-            <h2>Daga Mamadou Dembele</h2>
-          </div>
+      <div style="width: 400px;" class="image">
+        <div style="display: flex;
+               flex-direction: column;
+               align-items: center;">
+          <img src="../assets/image/logo developpeur.jpg" alt="logo">
+          <h2>Daga Mamadou Dembele</h2>
+        </div>
       </div>
     </section>
-  </main>
+    <!--section competences-->
+    <div style="text-align: center; margin-top: 100px;">
+      <h1 style="text-decoration: underline;">Mes competences</h1>
+      <p style="font-size: 1.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <section class="competences" id="competences">
+      <div class="container">
+        <div>
+          <img src="../assets/image/design graphs.jpg" alt="">
+        </div>
+        <div>
+          <h2> Design graphique </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, expedita at. Sunt harum ab explicabo,
+            aliquid consectetur ducimus aspernatur fugit.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <img src="../assets/image/programme.jpg" alt="">
+        </div>
+        <div>
+          <h2>programmation </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi non nobis debitis quam laudantium.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <img src="../assets/image/gestion de P.jpg" alt="">
+        </div>
+        <div>
+          <h2> gestion de projets</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fu$ga, omnis. Facere culpa dolorem iusto
+            voluptatum
+            deleniti, eaque sint tempora excepturi?</p>
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+    <div class="grille-systeme">
+      <div>
+        <label for="Django-progress">Django 50%</label>
+        <progress id="Django-progress" value="50" max="100" style="width: 300px; height: 15px;"></progress>
+      </div>
+      <div>
+        <label for="Django-progress">Django 75%</label>
+        <progress id="Django-progress" value="75" max="100" style="width: 300px; height: 15px;"></progress>
+      </div>
+      <div>
+        <label for="Django-progress">Django 90%</label>
+        <progress id="Django-progress" value="90" max="100" style="width: 300px; height: 15px;"></progress>
+      </div>
+      <div>
+        <label for="Django-progress">Django 60%</label>
+        <progress id="Django-progress" value="60" max="100" style="width: 300px; height: 15px;"></progress>
+      </div>
+      <div>
+        <label for="Django-progress">Django 20%</label>
+        <progress id="Django-progress" value="20" max="100" style="width: 300px; height: 15px;"></progress>
+      </div>
+    </div>
+
+    <div style="width: 300px;
+    height: 300px;">
+
+    </div>
+    <!--<div class="animer"></div>
+
+     <div class="element"></div>
+
+     <div class="kenburns-top "></div>-->
+    <div style="text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-top: 10px;
+      ">
+      <h1>MES projets</h1>
+    </div>
+    <section class="Projets" id="Projets">
+      <div class="boxer">
+        <div>
+          <img src="../assets/image/agritech.jpg" alt="">
+        </div>
+        <div>
+          <h2>Nom1</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam repellendus voluptatum autem libero
+            molestiae harum consequuntur enim quo id.</p>
+        </div>
+      </div>
+      <div class="boxer">
+        <div>
+          <img src="../assets/image/edutech.jpg" alt="">
+        </div>
+        <div>
+          <h2>Nom2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam obcaecati perspiciatis molestiae
+            corporis, ipsa at facere omnis reiciendis earum suscipit nesciunt dolorum fugit officiis! Vel voluptas
+            aliquid quod nobis mollitia nam aspernatur, cupiditate rerum deleniti, asperiores dicta, a fuga aut iure
+            praesentium facilis laboriosam ad corrupti ducimus error explicabo? Ipsum?
+          </p>
+        </div>
+      </div>
+      <div class="boxer">
+        <div>
+          <img src="../assets/image/egouvern.jpg" alt="">
+        </div>
+        <div>
+          <h2>Nom3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus recusandae ducimus deleniti
+            eius temporibus reiciendis soluta officia, numquam corrupti nesciunt delectus impedit magnam veritatis
+            adipisci obcaecati praesentium sed quas repellat aliquid voluptatibus illo neque esse a. Sapiente vero a eum
+            omnis iste fugiat iure vitae. Tempora accusamus consequuntur architecto. Debitis saepe, consequuntur dicta
+            delectus eaque molestiae aut corporis? Ad omnis voluptate molestiae odio, magnam distinctio pariatur velit
+            fugiat beatae.</p>
+        </div>
+      </div>
+
+      <div class="boxer">
+        <div>
+          <img src="../assets/image/smartindustrie.jpg" alt="">
+        </div>
+        <div>
+          <h2>Nom4</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad voluptatem nostrum omnis, mollitia beatae
+            aliquam saepe suscipit accusantium repellat consectetur.</p>
+        </div>
+      </div>
+
+      <div class="boxer">
+        <div>
+          <img src="../assets/image/Fintech.jpg" alt="">
+        </div>
+        <div>
+          <h2>Nom5</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit incidunt error, laudantium non earum
+            maiores saepe ex blanditiis rerum inventore quia! Accusantium officiis quos quo omnis eum voluptate cumque
+            facere voluptas maxime itaque ab veniam voluptatem, aut, id quidem illum distinctio? Laudantium doloremque
+            sed officia ullam quae molestiae laborum earum repellendus suscipit. Voluptatum consequatur suscipit, id
+            tempore molestiae cupiditate.</p>
+        </div>
+      </div>
+
+
+    </section>
+    <section>
+      <div>
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, saepe?</p>
+      </div>
+      <div class="contact">
+        <div class="formulaire">
+          <form>
+            <div>
+              <label for="nom" >Nom</label>
+              <input class="input" id="nom" type="text" placeholder="Entrer votre nom">
+            </div>
+            <div>
+              <label for="Prenom">Prenom</label>
+              <input  class="input" id="Prenom" type="text" placeholder="Entrer votre Prenom">
+            </div>
+            <div>
+              <label for="nom">nom</label>
+              <input  class="input" id="nom" type="text" placeholder="Entrer votre nom">
+            </div>
+            <div>
+              <label for="Email">Email</label>
+              <input class="input" id="Adrresse  email" type="email" placeholder="Entrer votre adresse email">
+            </div>
+            <div>
+              <label for="TElephone">Telephone</label>
+              <input    class="input" id="Numero" type="number" placeholder="Entrer votre numero">
+            </div>
+            <div>
+              <label for="Message">Message</label>
+              <textarea name="" id="" placeholder="Entrer votre message"></textarea>
+            </div>
+            <input
+             type="submit" class="btn" value="Envoyer">
+          </form>
+        </div>
+        <div>
+          <h1> Daga Mamadou Dembele</h1> <br>
+          <h2>Adresse Email : dagamamadoud@gmail.com</h2>
+          <h2>Numero:(+223) 68-74-76-90</h2>
+          <h2> Adresse:Samè</h2>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
   </main>
 </body>
 
